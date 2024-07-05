@@ -346,10 +346,8 @@ def calcular_mayor(lista:list)->int:
     for numero in lista:
         if flag == False or numero > num_mayor:
             num_mayor = numero
-            if numero == num_mayor:
-                num_mayor_2 = numero
             flag = True
-    return num_mayor, num_mayor_2
+    return num_mayor
 #-------------------------------------------------------------------------------------------------------------------------------------
 def mapear_likes_users(lista:list)->list:
     """Mapea lista de diccionarios a lista de tuplas con likes y usuarios
